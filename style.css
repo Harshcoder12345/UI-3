@@ -4,19 +4,19 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;;
 
+
 }
 
 .main{
     width: 100%;
     height: 100vh;
-    /* background-color: rgb(87, 114, 84); */
+    
 }
 
 .navbar{
     width: 100%;
     padding-block: 50px;
     height:  auto;
-    /* background-color: azure; */
     display: flex;
     flex-direction: row;
     display: flex;
@@ -27,7 +27,6 @@
 .leftnav{
     width: 25%;
     height: 100%;
-    /* background-color: rgb(145, 145, 25); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +34,6 @@
 .centernav{
     width: 50%;
     height: 100%;
-    /* background-color: rgb(34, 47, 93); */
     display: flex;
     justify-content: start;
     align-items: center;
@@ -52,7 +50,6 @@
 .rightnav{
     width: 25%;
     height: 100%;
-    /* background-color: rgb(116, 129, 173); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +57,6 @@
 
 .rightnav button{
     width: 100px;
-    /* padding: 20px; */
     height: 40px;
     border: 1px solid black;
     background-color: white;
@@ -69,9 +65,7 @@
 
 .section1{
     width: 100%;
-    /* height:  300px ; */
     height: 40%;
-    /* background-color: blue; */
     display: flex;
     justify-content: center;
 }
@@ -79,7 +73,6 @@
 .section1content{
     width: 80%;
     height: 100%;
-    /* background-color: antiquewhite; */
     display: flex;
     flex-direction: row;
 
@@ -96,7 +89,6 @@
 
 .section1left button{
     width: 120px;
-    height: 50px;
     background-color: black;
     color: white;
     border-radius: 10px;
@@ -119,7 +111,6 @@
 .section1right{
     width: 50%;
     height: 100%;
-    /* background-color: rgb(99, 94, 14); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,7 +119,6 @@
 .section1rightcontainer{
     width: 80%;
     height: 100%;
-    /* background-color: aqua; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr ;
@@ -171,7 +161,6 @@ background-image: url(./img6.jpg);
 .sectionfotter{
     width: 100%;
     height: 40%;
-    /* background-color: rgb(103, 134, 134); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,7 +169,6 @@ background-image: url(./img6.jpg);
 .sectionfotter1{
     width: 80%;
     height: 100%;
-    /* background-color: brown; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -191,8 +179,6 @@ background-image: url(./img6.jpg);
 .sec1left{
     width: 30%;
     height: 80%;
-
-    /* background-color: chocolate; */
 }
 .sec1left{
     width: 30%;
@@ -218,7 +204,6 @@ background-image: url(./img6.jpg);
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    /* justify-content: center; */
     align-items: center;
 
 }
@@ -239,8 +224,6 @@ background-image: url(./img6.jpg);
 .sec1center{
     width: 30%;
     height: 80%;
-
-    /* background-color: rgb(157, 134, 117); */
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -255,8 +238,6 @@ background-image: url(./img6.jpg);
 .sec1right{
     width: 30%;
     height: 80%;
-
-    /* background-color: rgb(60, 36, 112); */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -314,6 +295,32 @@ width: 100%;
     padding: 5px;
 }
 
+.sectionfotter1{
+    margin-top: 130px;
+}
+
+.section1left button {
+    width: 80px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+}
+
+.rightnav button:hover{
+background-color: gray;
+}
+
+form{
+    flex-direction: column;
+    position: absolute;
+    right: 30px;
+    top: 0px;
+    transition: 1s ease-in-out;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+    /* z-index: -1; */
+}
 
 @media (max-width:900px){
     .centernav ul{
@@ -330,8 +337,48 @@ width: 100%;
     .leftnav h3{
         font-size: 30px;
     }
+    .leftnav h3{
+        padding-left: 20px;
+        font-size: 30px;
+    }
+    .font40{
+       display: none;
+    }
+    .sec1boxes{
+        display: none;
+    }
+
 }
 
+@media (max-width:550px){
+    .leftnav h3{
+        padding-left: 20px;
+        font-size: 20px;
+    }
+    .navbar{
+        width: 100%;
+    }
+   .leftnav h3{
+        font-size: 40px;
+        margin-left: 30px;
+    }
+    .font50 {
+        font-size: 30px;
+    }
+    .sec1center h7 {
+        width: 200px;
+        font-size: 21px;
+    }
+    .navbar{
+        padding-inline: 20px;
+    }
+    .section1rightcontainer{
+        width: 100%;
+    }
+    .sec1right h3{
+        display: none;
+    }
+}
 
 
 

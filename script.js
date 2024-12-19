@@ -1,18 +1,24 @@
+let main = document.getElementById('main')
+console.log(main);
+
+
 
 
 function formShow() {
    const forms = document.getElementsByTagName('form');
-   console.log(forms);
-   
- 
-      forms[0].classList.remove('d-none'); 
-     forms[0].classList.add('d-flex'); 
+
+     forms[0].classList.add('formshow'); 
+
      forms[0].style.width = "300px"
-     forms[0].style.backgroundColor = "gray"
+     forms[0].style.backgroundColor = "white"
+     
+
+
 
     let a = document.getElementById('exampleInputEmail1').value 
 
-
+       main.style.opacity = '0.3'
+       main.style.backgroundColor = 'gray'
      
 
    

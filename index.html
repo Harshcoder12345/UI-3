@@ -10,21 +10,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <div class="main">
+    <div id="main" class="main">
         <div class="navbar">
            <div class="leftnav">
-            <h3>Cranbery</h3>
+            <h2>Cranbery</h2>
            </div>
            <div class="centernav">
-            <ul>
-                <li>Home</li>
-                <li>School</li>
-                <li>Joggers</li>
-                <li>Community</li>
+            <ul id="ul" class="list-group">
+                <li  class="list-group-item">Home</li>
+                <li class="list-group-item">School</li>
+                <li class="list-group-item">Joggers</li>
+                <li class="list-group-item">Community</li>
             </ul>
            </div>
            <div class="rightnav">
-            <button id="btn1">Log In</button>
+            <button class="btn btn-primary"  id="btn1">Log In</button>
            </div>
         </div>
         <div class="section1">
@@ -32,7 +32,7 @@
             <div class="section1left">
                 <h1 class="font50"> <span class="revamp">Revamp</span> your <br> wardrobe with <br> our fashion style</h1>
                 <h4 class="font40">It is for you to find a perfect card along with <br> detailed information you use <br> want and helps you use it easily</h4>
-                <button>Shop now</button>
+                <!-- <button>Shop now</button> -->
 
             </div>
             <div class="section1right">
@@ -54,7 +54,8 @@
                     <div class="discountbox">
                         <div class="disbox">30% <br> Off</div>
                      </div>
-                    <div class="avail"> Available massive <br>                        <div class="dis">discount!
+                    <div class="avail"> Available massive <br>                        
+                        <div class="dis">discount!
                         
                     </div>
 
@@ -89,7 +90,7 @@
 
         </div>
     </div>
-    <form class="d-none mt-2 rounded p-2">
+    <form class="mt-2 rounded p-2" class="formhidden">
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
